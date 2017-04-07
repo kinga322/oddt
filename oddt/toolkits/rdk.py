@@ -1149,6 +1149,10 @@ class Bond(object):
         self.Bond = Bond
 
     @property
+    def idx(self):
+        return self.Bond.GetIdx()
+
+    @property
     def order(self):
         return BOND_ORDERS[self.Bond.GetBondType()]
 
